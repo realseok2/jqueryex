@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript" src="/jq/jquery/jquery-1.12.4.js"></script>
+<title>Insert title here</title>
+</head>
+<body>
+
+	<div>
+		<button id="btn">js테스트 버튼</button>
+		<h1 id="display">이름출력영역</h1>
+	</div>
+
+
+</body>
+
+<script type="text/javascript">
+	$("#btn").on("click", function(){	//	$("#btn")을 클릭했을 때 function에 들어가는 내용을 작동시켜라.
+		console.log("버튼클릭");		
+		$("#display").html("<font color = 'red'>강동원<font>");
+		
+	});
+	
+	
+	
+</script>
+
+</html>
