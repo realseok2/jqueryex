@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript" src="/jq/jquery/jquery-1.12.4.js"></script>
+
+<title>Insert title here</title>
+</head>
+<body>
+	
+	
+	<ul>
+		<li id="first"> 텍스트1 텍스트1 텍스트1 텍스트1 텍스트1 </li>
+		<li id="second"> 텍스트2 텍스트2 텍스트2 텍스트2 텍스트2 </li>
+		<li id="third"> 텍스트3 텍스트3 텍스트3 텍스트3 텍스트3 </li>
+		<li id="fourth"> 텍스트4 텍스트4 텍스트4 텍스트4 텍스트4 </li>
+		<li id="first"> 텍스트1-1 텍스트1-1 텍스트1-1 텍스트1-1 텍스트1-1 </li>
+	</ul>
+
+
+</body>
+	
+	<script type="text/javascript">
+	
+		//	id를 호출 할 때는 css와 동일하게 #을 사용합니다.
+		//	id값은 한 페이지에 하나씩만 존재해야합니다.
+		//	따라서 위에는 두개가 존재하기 때문에 먼저 선언된 것만 인식합니다.
+		//	여러 값을 동시에 설정하기 위해서는 class를 사용해야 합니다.
+		$("#second").css("color", "red");
+		$("#fourth").css("color", "blue");
+		$("#first").css("color", "yellow");
+	
+	</script>
+
+
+</html>

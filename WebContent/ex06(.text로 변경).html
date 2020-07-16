@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript" src="/jq/jquery/jquery-1.12.4.js"></script>
+
+<title>Insert title here</title>
+</head>
+
+<body>
+	<p id="p1"> abcdefghijklmn </p>
+	<p id="p2"> 학교종이 땡땡땡 abcdefg </p>
+</body>
+	
+	<script type="text/javascript">
+	
+		//	값을 넣거나 변경할 때 사용				-->	 setter
+		$("#p1").text("강동원").css("color", "pink");
+		
+		//	붋러오고자 하는 곳에 값을 가져오고자 할 때 사용	--> getter
+		var str = $("#p2").text();
+		console.log(str);
+		
+	</script>
+
+</html>

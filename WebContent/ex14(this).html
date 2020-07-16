@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript" src="/jq/jquery/jquery-1.12.4.js"></script>
+<title>Insert title here</title>
+</head>
+<body>
+	
+	<ul>
+		<li data-no="1" data-userId="aaa" id="first"	class="red">첫번째 아이템입니다.</li>
+		<li data-no="2" data-userId="bbb" id="second"	class="blue"><strong>두번째 아이템입니다.</strong></li>
+		<li data-no="3" data-userId="ccc" id="third"	class="del">세번째아이템입니다.</li>
+		<li data-no="4" data-userId="ddd"><strong>네번째 아이템입니다.</strong></li>
+		
+	</ul>
+
+</body>
+
+	<script type="text/javascript">
+	
+		//	li태그들은 모두 클릭시 변경가능
+		$("li strong").on("click", function(){
+			console.log("li클릭");
+			var $this = $(this);
+			
+			//	텍스트 가져오기
+//			$this.text("강동원");
+			
+			var text = $this.text();
+			console.log(text);
+			
+			//	속성값 가져오기
+//			var attr = $this.attr("class");
+//			console.log(attr);
+
+//			var no = $this.data("no");
+//			console.log(no);
+			
+//			var userId = $this.data("userid");
+//			console.log(userId);
+	
+//			var id = $this.attr("id");
+//			console.log(id);
+	
+//			var attr = $this.attr("class");
+//			console.log(attr);
+		
+		});
+
+/* 	
+		//	클래스의 속성을 가지고 있는 것만 클릭시 변경가능
+		$("[class]").on("click", function(){
+			console.log("li클릭");
+			var thisTag = $(this);
+			thisTag.text("강동원");
+		});
+ */	
+
+ </script>
+
+
+</html>

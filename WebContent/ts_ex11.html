@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript" src="/jq/jquery/jquery-1.12.4.js"></script>
+<style>
+	.red {color: red;}
+	
+	.blue {color: blue;}
+
+</style>
+
+
+<title>Insert title here</title>
+</head>
+
+<body>
+
+	<ul>
+		<li id="first" class="red">첫번째 아이템입니다.</li>
+		<li id="second" class="blue"><strong>두번째 아이템입니다.</strong></li>
+		<li id="third" class="del red">세번째아이템입니다.</li>
+		<li><strong>네번째 아이템입니다.</strong></li>
+		<li>다섯번째 아이템입니다.</li>
+	</ul>
+
+</body>
+	
+	<script type="text/javascript">
+	
+		//	first id를 가진 곳의 red 클래스를 지워주세요.
+		$("#first").removeClass("red");
+		
+		//	first id를 가진 곳의 클래스를 blue로 설정해 주세요. 
+		$("#first").addClass("blue");
+		
+		//	li 전체에서 red라는 클래스를 지워주세요.
+		$("li").removeClass("red");
+		
+	
+	</script>
+
+
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+
+<script type="text/javascript" src="/jq/assets/js/math.js"></script>
+
+
+</head>
+<body>
+
+	<h1>계산기</h1>
+
+	<input  id = "left"		type = "text" value = ""> +		<!-- 첫번째 칸에 left라는 이름을 지정 -->
+	<input	id = "right"	type = "text" value = ""> =		<!-- 두번째 칸에 right라는 이름을 지정 -->
+	<input	id = "sum"		type = "text" value = "">		<!-- 세번째 칸에 sum이라는 이름을 지정 -->
+	<button id = "btnCal">계산하기</button>					<!-- 네번째 칸에 btnCal라는 이름을 지정 -->
+				 	
+</body>
+
+<script type="text/javascript">
+
+	$("#btnCal").on("click", function(){
+	
+		console.log("클릭");
+		var left = $("#left").val();
+		var right = $("#right").val();
+		var sum = parseInt(left) + parseInt(right);
+		
+		$("#sum").val(sum);
+		
+	});
+	
+</script>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript" src="/jq/jquery/jquery-1.12.4.js"></script>
+
+<title>Insert title here</title>
+</head>
+
+<body>
+	<p id="p1"> abcdefghijklmn </p>
+	<p id="p2"> 학교종이 땡땡땡<br /> abcdefg </p>
+</body>
+	
+	<script type="text/javascript">
+	
+		//	.text와 비슷하지만 .html은 <strong>등의 태그를 쓸 수 있다.
+		$("#p1").html("<strong>강동원</strong>").css("color", "blue");
+//		$("#p1").text("<strong>강동원</strong>").css("color", "red");			//	두 개 서로 어떤 차이가 있는지 비교
+
+		//	.text와 .html의 비교
+		var str01 = $("#p2").html();		//	태그까지 모두 가져와줍니다.
+		console.log(str01);
+		
+		var str02 = $("#p2").text();		//	텍스트만 가져와줍니다.
+		console.log(str02);
+		
+		
+		
+	</script>
+	
+
+</html>
